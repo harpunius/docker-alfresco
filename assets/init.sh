@@ -5,7 +5,7 @@
 # if it is the first time this is run
 # let's copy data into the volume if it does not exist
 if [ ! -d /alfresco/alf_data/keystore ]; then
-  rsync -av --no-o --no-g /alf_data.install/alf_data /alfresco/
+  rsync -av /alf_data.install/alf_data /alfresco/
 
   echo
   echo 'Alfresco copied data from an original installation; ready for start up.'
